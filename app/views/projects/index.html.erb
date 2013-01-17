@@ -1,15 +1,7 @@
-<h3>Recurly Project List</h3>
+<h2>Recurly Project List</h2>
 
 <% plan = @plans.select{|plan| plan.name} %>
-<ul><%= plan %></ul>
 
-
-<%#= link_to project.project_name,"#",:id=>"show_info"%>
-<%#= link_to "Show","#",:id=>"show_btn"%>
-<%#=select_tag :project ,options_for_select(@projects.collect{|project|[project.project_name,project.id]})%>
-<%#=link_to "Update",edit_project_path(project),class: "btn btn-primary"%>
-<%#= link_to "Delete",project_path(project),:method=>:delete %>
-
-<!--<div id="show_each_project">-->
-  <!--<%#= render :partial=>"show_project"%>-->
-<!--</div>-->
+<h3>Plan Details  </h3>
+<%= plan %>
+</br>
