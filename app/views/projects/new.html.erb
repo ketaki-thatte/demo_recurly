@@ -1,0 +1,13 @@
+<h1>Project Registration</h1>
+<%=form_for (@project),:url=>projects_path,:method=>:post do |f|%>
+    <p>
+      </br>
+     Project Name
+      <%= f.text_field :project_name %>
+    </p>
+    <p>
+      <%= f.submit "Create Project" %>
+
+    </p>
+<%end%>
+

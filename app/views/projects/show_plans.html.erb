@@ -1,0 +1,4 @@
+<h3>Welcome User</h3>
+Plan List
+<% plan = @plans.select{|plan| plan.plan_code== product.id.to_s}.first %>
+ <%= plan %>

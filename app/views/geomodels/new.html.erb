@@ -1,0 +1,13 @@
+<h1>sample Geo model</h1>
+<%=form_for (@geo_model),:method=>:post do |f|%>
+    <p>
+      </br>
+     Enter Address
+      <%= f.text_field :address %>
+    </p>
+    <p>
+      <%= f.submit "Sign up" %>
+
+    </p>
+<%end%>
+

@@ -1,0 +1,6 @@
+<%= form_for @project,:url => project_path,:method => :put do |f| %>
+    <p>
+      Project name<br />
+      <%= f.text_field :project_name %>
+      <%= f.submit "Edit"%>
+<% end %>

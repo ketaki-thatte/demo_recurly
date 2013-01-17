@@ -1,0 +1,20 @@
+Address :
+<br>
+<%=@geo_model.address%>
+<br>
+Longitude:
+<%=@geo_model.longitude%>
+<br>
+Latitude :
+<%=@geo_model.latitude%>
+ <br>
+Nearby Location
+
+<% for geo_model in @geo_model.nearbys(10) %>
+
+<li> <%= link_to geo_model.address,geo_model %>(<%= geo_model.distance.round(10) %> km)</li>
+<%end%>
+
+<br>
+<%=link_to "Show Graph","https://maps.google.com/?q=#{@geo_model.longitude},#{@geo_model.latitude}" %>
+
