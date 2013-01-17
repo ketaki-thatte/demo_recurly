@@ -31,6 +31,8 @@ gem  'rails_best_practices'
 gem 'geocoder'
 gem "pry-remote"
 gem 'pjax_rails'
+gem "less-rails"
+gem 'twitter-bootstrap-rails'
 #gem 'omniouth-facebook'
 
 
